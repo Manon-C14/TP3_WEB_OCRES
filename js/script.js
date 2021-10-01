@@ -1,6 +1,5 @@
 
-// Fonction appelée lors du click du bouton
-window.onload=function start(){
+function start(){
     // Création de l'objet apiWeather
     const apiWeather = new API_WEATHER();
     // Appel de la fonction fetchTodayForecast
