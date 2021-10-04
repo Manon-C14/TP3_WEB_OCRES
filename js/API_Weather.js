@@ -4,7 +4,7 @@
 const API_KEY = "4081444b7b90198136fefe6ed4ccf35b";
 // Url API
 const API_URL = "https://api.openweathermap.org/data/2.5/weather";
-const API_URL_3day = "https://api.openweathermap.org/data/2.5/forecast/daily"
+const API_URL_3day = "https://api.openweathermap.org/data/2.5/forecast/daily";
 // Base source icon
 const API_URL_ICON = "http://openweathermap.org/img/wn/";
 
@@ -36,7 +36,7 @@ class API_WEATHER{
 
   getThreeDayForecast(){
     return axios
-    .get(`${API_URL_3day}?q=${this.city}&cnt=4&units=metric&appid=${API_KEY}`,{
+    .get(`${API_URL_3day}?q=${this.city}&cnt=3&units=metric&appid=${API_KEY}`,{
       crossdomain: true
     })
   }
